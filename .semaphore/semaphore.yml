@@ -22,7 +22,8 @@ blocks:
       epilogue:
         always:
           commands:
-            - echo "do you care"
+            - ls || echo "a"
+            - ls nonexs || echo "b"
             - return 1 || echo "something"
   - name: Analyze code
     task:
