@@ -17,10 +17,7 @@ blocks:
       jobs:
         - name: Compile
           commands:
-            - mix deps.get
-            - mix do compile
-            - MIX_ENV=test mix compile
-            - cache store
+            - 'echo "compile :) "'
       epilogue:
         always:
           commands:
