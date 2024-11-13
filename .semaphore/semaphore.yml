@@ -22,6 +22,7 @@ blocks:
       epilogue:
         always:
           commands:
+            - echo "do you care"
             - return 1 || echo "something"
   - name: Analyze code
     task:
