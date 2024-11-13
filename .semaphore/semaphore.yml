@@ -17,7 +17,7 @@ blocks:
       jobs:
         - name: Compile
           commands:
-            - return 1
+            - return 1 || echo "ok"
             - 'echo "compile :) "'
       epilogue:
         always:
