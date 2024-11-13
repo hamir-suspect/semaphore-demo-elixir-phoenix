@@ -21,6 +21,10 @@ blocks:
             - mix do compile
             - MIX_ENV=test mix compile
             - cache store
+      epilogue:
+        always:
+          commands:
+            - exit 1 || echo "something"
   - name: Analyze code
     task:
       prologue:
