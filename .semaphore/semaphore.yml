@@ -24,7 +24,7 @@ blocks:
       epilogue:
         always:
           commands:
-            - exit 1 || echo "something"
+            - return 1 || echo "something"
   - name: Analyze code
     task:
       prologue:
